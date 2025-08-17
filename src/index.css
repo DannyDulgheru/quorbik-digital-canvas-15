@@ -146,7 +146,8 @@
 
   .card-glow:hover {
     border: 2px solid hsl(var(--primary));
-    transform: translateY(-4px);
+    transform: translateY(-4px) scale(1.05);
+    z-index: 10;
   }
 
   /* Floating Buttons */
@@ -164,8 +165,9 @@
   }
 
   .floating-btn:hover {
-    transform: scale(1.1);
+    transform: scale(1.2);
     border: 2px solid hsl(var(--primary));
+    z-index: 60;
   }
 
   /* Split Button */
@@ -179,7 +181,8 @@
 
   .split-button:hover {
     border: 2px solid hsl(var(--primary));
-    transform: translateY(-2px);
+    transform: translateY(-2px) scale(1.03);
+    z-index: 10;
   }
 
   .split-button-half {
@@ -189,7 +192,8 @@
   .split-button-half:hover {
     background: hsl(var(--primary) / 0.1);
     outline: 1px solid hsl(var(--primary));
-    transform: scale(1.02);
+    transform: scale(1.05);
+    z-index: 10;
   }
 
   /* Text Effects */
@@ -236,5 +240,45 @@
 
   .animate-pulse-glow {
     animation: pulse-glow 2s ease-in-out infinite;
+  }
+
+  /* Focus Effects - Fade siblings on hover */
+  .hover-focus-group:hover > *:not(:hover) {
+    opacity: 0.4;
+    filter: blur(1px);
+    transition: var(--transition-smooth);
+  }
+
+  .hover-focus-group > * {
+    transition: var(--transition-smooth);
+  }
+
+  .hover-focus-group > *:hover {
+    opacity: 1;
+    filter: blur(0);
+    transform: scale(1.05);
+    z-index: 10;
+    position: relative;
+  }
+
+  /* Button hover effects */
+  .btn-hover-scale {
+    transition: var(--transition-smooth);
+  }
+
+  .btn-hover-scale:hover {
+    transform: scale(1.05);
+    z-index: 10;
+    position: relative;
+  }
+
+  /* Logo hover effects */
+  .logo-hover {
+    transition: var(--transition-smooth);
+  }
+
+  .logo-hover:hover {
+    transform: scale(1.1);
+    filter: brightness(1.1);
   }
 }

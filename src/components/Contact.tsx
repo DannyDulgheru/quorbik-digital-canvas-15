@@ -46,7 +46,7 @@ const Contact = () => {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 mb-16">
+        <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 mb-16 hover-focus-group">
           <Card className="card-glow text-center">
             <CardHeader>
               <div className="mx-auto mb-4 p-3 bg-primary/10 rounded-full w-fit">

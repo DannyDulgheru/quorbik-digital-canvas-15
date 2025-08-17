@@ -10,7 +10,7 @@ const Footer = () => {
               <img 
                 src={logoWhite} 
                 alt="Quorbik Logo" 
-                className="w-8 h-8 transition-all duration-300 hover:drop-shadow-none hover:outline hover:outline-2 hover:outline-white rounded-full" 
+                className="w-8 h-8 logo-hover transition-all duration-300 hover:drop-shadow-none hover:outline hover:outline-2 hover:outline-white rounded-full" 
               />
               <span className="text-2xl font-bold text-gradient">Quorbik</span>
             </div>
