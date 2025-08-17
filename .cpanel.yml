@@ -2,7 +2,12 @@
 deployment:
   tasks:
     - export DEPLOYPATH=/home/nkhwqryyab/quorbik.com/
+    - /bin/mkdir -p $DEPLOYPATH
     - /bin/rm -rf $DEPLOYPATH/*
-    - npm install
-    - npm run build
+
+    # install dependencies & build (⚠ requires Node.js on server)
+    - /usr/local/bin/npm install --legacy-peer-deps
+    - /usr/local/bin/npm run build
+
+    # copy build output
     - /bin/cp -R dist/* $DEPLOYPATH
