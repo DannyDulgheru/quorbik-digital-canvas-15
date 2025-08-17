@@ -1,7 +1,8 @@
 ---
 deployment:
   tasks:
-    - export DEPLOYPATH=/home/nkhwqryyab/quorbik.com/
+    - export DEPLOYPATH=/home/nkhwqryyab/quiorbik.com/
+    - /bin/rm -rf $DEPLOYPATH/*
     - npm install
     - npm run build
     - /bin/cp -R dist/* $DEPLOYPATH
