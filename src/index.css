@@ -16,9 +16,9 @@
     --popover: 240 10% 3.9%;
     --popover-foreground: 0 0% 98%;
 
-    /* Primary: Vibrant Orange */
-    --primary: 24 95% 53%;
-    --primary-foreground: 240 10% 3.9%;
+    /* Primary: Orange from Logo (#FF5722) */
+    --primary: 14 100% 57%;
+    --primary-foreground: 0 0% 98%;
 
     /* Secondary: Deep Orange */
     --secondary: 16 90% 48%;
@@ -42,9 +42,9 @@
     --radius: 2rem;
 
     /* Custom Orange Design Tokens */
-    --gradient-primary: linear-gradient(135deg, hsl(24 95% 53%), hsl(16 90% 48%));
-    --gradient-secondary: linear-gradient(135deg, hsl(43 96% 56%), hsl(24 95% 53%));
-    --gradient-hero: linear-gradient(135deg, hsl(240 10% 3.9%) 0%, hsl(16 90% 48% / 0.1) 50%, hsl(24 95% 53% / 0.1) 100%);
+    --gradient-primary: linear-gradient(135deg, hsl(14 100% 57%), hsl(16 90% 48%));
+    --gradient-secondary: linear-gradient(135deg, hsl(43 96% 56%), hsl(14 100% 57%));
+    --gradient-hero: linear-gradient(135deg, hsl(240 10% 3.9%) 0%, hsl(16 90% 48% / 0.1) 50%, hsl(14 100% 57% / 0.1) 100%);
     
     --shadow-glow: 0 0 40px hsl(24 95% 53% / 0.3);
     --shadow-card: 0 20px 40px -12px hsl(240 10% 3.9% / 0.8);

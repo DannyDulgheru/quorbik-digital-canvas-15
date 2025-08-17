@@ -91,9 +91,12 @@ const Contact = () => {
               <CardTitle className="text-xl">Email</CardTitle>
             </CardHeader>
             <CardContent>
-              <p className="text-muted-foreground">
+              <a 
+                href="mailto:hi@quorbik.com" 
+                className="text-muted-foreground hover:text-primary transition-colors"
+              >
                 hi@quorbik.com
-              </p>
+              </a>
             </CardContent>
           </Card>
         </div>

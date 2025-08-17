@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Menu, X } from "lucide-react";
+import logoOrange from "@/assets/logo-orange.png";
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -18,8 +19,9 @@ const Header = () => {
       <div className="container mx-auto px-6 py-4">
         <div className="flex items-center justify-between">
           {/* Logo */}
-          <div className="text-2xl font-bold">
-            <span className="text-gradient">Quorbik</span>
+          <div className="flex items-center gap-3">
+            <img src={logoOrange} alt="Quorbik Logo" className="w-8 h-8" />
+            <span className="text-2xl font-bold text-gradient">Quorbik</span>
           </div>
 
           {/* Desktop Navigation */}
