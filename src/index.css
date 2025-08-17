@@ -244,8 +244,7 @@
 
   /* Focus Effects - Fade siblings on hover */
   .hover-focus-group:hover > *:not(:hover) {
-    opacity: 0.4;
-    filter: blur(1px);
+    opacity: 0.3;
     transition: var(--transition-smooth);
   }
 
@@ -255,7 +254,6 @@
 
   .hover-focus-group > *:hover {
     opacity: 1;
-    filter: blur(0);
     transform: scale(1.05);
     z-index: 10;
     position: relative;
