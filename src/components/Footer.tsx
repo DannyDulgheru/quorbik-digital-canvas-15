@@ -1,4 +1,4 @@
-import logoWhite from "@/assets/logo-white.png";
+import logoWhite from "/lovable-uploads/54338e96-8af9-4581-886a-81d1b6f6a892.png";
 
 const Footer = () => {
   return (
@@ -7,7 +7,11 @@ const Footer = () => {
         <div className="flex flex-col md:flex-row items-center justify-between gap-6">
           <div className="text-center md:text-left">
             <div className="flex items-center gap-3 mb-2 justify-center md:justify-start">
-              <img src={logoWhite} alt="Quorbik Logo" className="w-8 h-8" />
+              <img 
+                src={logoWhite} 
+                alt="Quorbik Logo" 
+                className="w-8 h-8 transition-all duration-300 hover:drop-shadow-none hover:outline hover:outline-2 hover:outline-white rounded-full" 
+              />
               <span className="text-2xl font-bold text-gradient">Quorbik</span>
             </div>
             <p className="text-muted-foreground">

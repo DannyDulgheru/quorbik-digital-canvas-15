@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Menu, X } from "lucide-react";
-import logoOrange from "@/assets/logo-orange.png";
+import logoOrange from "/lovable-uploads/2c644d84-674e-4cae-80cc-ad19b39288f1.png";
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -20,7 +20,11 @@ const Header = () => {
         <div className="flex items-center justify-between">
           {/* Logo */}
           <div className="flex items-center gap-3">
-            <img src={logoOrange} alt="Quorbik Logo" className="w-8 h-8" />
+            <img 
+              src={logoOrange} 
+              alt="Quorbik Logo" 
+              className="w-8 h-8 transition-all duration-300 hover:drop-shadow-none hover:outline hover:outline-2 hover:outline-primary rounded-full" 
+            />
             <span className="text-2xl font-bold text-gradient">Quorbik</span>
           </div>
 
